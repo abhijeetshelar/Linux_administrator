@@ -1,0 +1,37 @@
+Create multiple user accounts on the server.
+
+sudo useradd alice 
+sudo useradd fave
+sudo useradd bob
+
+Locatio - /home/username
+
+
+-----------------------------
+
+Set Initial Passwords:
+
+echo "password123" | sudo passwd --stdin alice
+echo "password123" | sudo passwd --stdin bob
+echo "password123" | sudo passwd --stdin charlie
+echo "password123" | sudo passwd --stdin dave
+echo "password123" | sudo passwd --stdin eve
+
+
+-----------------------------------------------------
+
+Create and manage groups for users.
+
+sudo groupadd devlopers
+sudo groupadd admins
+sudo groupadd support
+
+
+------------------------------------------------------------
+
+Add Users to Groups
+
+sudo usermod -aG devlopers alice
+sudo usermod -aG admins fave
+sudo usermod -aG support bob
+
