@@ -24,8 +24,9 @@ Create and manage groups for users.
 
 sudo groupadd devlopers
 sudo groupadd admins
-sudo groupadd support
+sudo groupadd support 
 
+#error
 
 ------------------------------------------------------------
 
