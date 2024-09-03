@@ -35,3 +35,15 @@ sudo usermod -aG devlopers alice
 sudo usermod -aG admins fave
 sudo usermod -aG support bob
 
+-------------------------------------------------------------
+
+
+Manage access to directories using group permissions
+
+sudo mkdir /var/dev /var/admin /var/support
+sudo chown :developers /var/dev
+sudo chown :admins    /var/admin
+
+
+
+
